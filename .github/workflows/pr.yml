@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ github.workflow_sha }}"
-      - run: echo "wf-hash-${{ hashFiles('.github/workflows/pr.yml')"
+      - run: echo "wf-hash-${{ hashFiles('.github/workflows/pr.yml') }}"
       - run: echo "Third Step"
