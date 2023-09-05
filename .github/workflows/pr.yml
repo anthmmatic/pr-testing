@@ -6,6 +6,7 @@ jobs:
   job-name:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - run: echo "${{ github.workflow_sha }}"
       - run: echo "wf-hash-${{ hashFiles('.github/workflows/pr.yml') }}"
       - run: echo "Third Step"
